@@ -1,0 +1,35 @@
+{%extends 'layout.html'%}
+{% block content %}
+
+<div class="container">
+    <h2 class="text-center mt-3">
+        Movements
+    </h2>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        {{ form.csrf_token }}
+        <div class="row">
+            <div class="form-group col">
+                {{ form.from_location.label(class="form-control-label") }}
+                {{ form.from_location(class="form-control form-control-lg") }}
+            </div>
+            <div class="form-group col">
+                {{ form.to_location.label(class="form-control-label") }}
+                {{ form.to_location(class="form-control form-control-lg") }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col">
+                {{ form.product.label(class="form-control-label") }}
+                {{ form.product(class="form-control form-control-lg") }}
+            </div>
+            <div class="form-group col">
+                {{ form.quantity.label(class="form-control-label") }}
+                {{ form.quantity(class="form-control form-control-lg") }}
+            </div>
+        </div>
+        <div class="form-group">
+                {{ form.add_movement(class="btn btn-outline-info") }}
+        </div>
+    </form>    
+{% endblock %}
