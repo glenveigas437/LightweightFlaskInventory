@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block content %}
+{%if location_list|length < 1%}
+    <h4>No Wareshouses found please visit <a href="{{ url_for('add_location') }}">this link</a> to add Location</h4>
+{% else %}
+    <h4>Warehouse Locations</h4>
+    <table class="table table-borderless">
+        <thead>
+            <th>
+                LOCATION ID
+            </th>
+            <th>
+                LOCATION NAME
+            </th>
+            <th>
+                ACTIONS
+            </th>
+        </thead>
+        {% for locations in location_list %}
+        <tr>
+            <td>{{locations.id}}</td>
+            <td>{{locations.location_name}}</td>
+            <td>
+                <a href="/view_locations/{{locations.id}}/update" class="btn btn-info">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+{% endblock %}    
