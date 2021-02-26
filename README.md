@@ -9,6 +9,14 @@ Features of this App
 3) Add Movements of Products to the Base Location(X) or Move Products from Location(X) to Location(Y)
 4) Update Movements, View Movements
 
+To run this app
+1) Download the Source Code
+2) Open your Command Prompt in Windows/Terminal in Linux
+3) and type the command: 'python inventoryApp.py'
+4) The App will be running in your localhost
+5) Play with it!
+
+
 So, let me give you a walkthrough of this Application
 
 This is how the Home Screen Looks 
