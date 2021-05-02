@@ -1,7 +1,5 @@
-# Flask-Inventory-Test
+#Inventory App
 Inventory Management Application built with Flask
-
-This Inventory Management is built using Flask as per the specifications mentioned [here](https://frappe.io/flask-test)
 
 Features of this App
 1) Add Products, Update Products, View Products
