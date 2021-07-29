@@ -1,4 +1,4 @@
-#Inventory-App
+# Inventory App
 
 
 Inventory Management Application built with Flask
